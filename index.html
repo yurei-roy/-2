@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>永續屏東：減碳視覺互動藝術</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌱 永續屏東：視覺化減碳行動</h1>
+    <p>以資料驅動藝術方式呈現 2023 年屏東縣的減碳成果</p>
+  </header>
+
+  <main>
+    <section class="visual-block">
+      <h2>☀️ 太陽能發電成效</h2>
+      <div class="bar-chart" id="solarChart"></div>
+      <p>再生能源設置量：<strong>1.2 GW</strong>（21.1 億度電）</p>
+    </section>
+
+    <section class="visual-block">
+      <h2>🌏 溫室氣體減量模擬</h2>
+      <input type="range" id="co2Slider" min="0" max="100" value="50" />
+      <p>目前碳排放減量進度：<span id="co2Output">50</span>%</p>
+      <div class="circle" id="co2Circle"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>資料來源：屏東縣政府環境保護局（2023）</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
